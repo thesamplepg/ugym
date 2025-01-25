@@ -30,6 +30,10 @@ function ugym_register_styles()
         'ugym-main-header',
         get_template_directory_uri() . '/assets/css/main-header.css',
     );
+    wp_enqueue_style(
+        'ugym-wordpress-content',
+        get_template_directory_uri() . '/assets/css/wordpress-content.css',
+    );
 }
 
 add_action('wp_enqueue_scripts', 'ugym_register_styles');

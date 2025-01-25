@@ -45,7 +45,7 @@
     : ''; ?>">
       <div class="comtainer mx-auto py-4 flex items-center gap-5">
         <div class="main-header_logo text-3xl text-white font-bold mr-8 grow"><a href="#">UGG</a></div>
-        <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-white font-medium">
+        <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-white font-semibold">
           <li class="relative group">
             <a href="">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
             <!--Nested menu-->
