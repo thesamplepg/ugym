@@ -1,4 +1,4 @@
-<section class="py-8">
+<section class="py-8" id="contacts-section">
   <div class="comtainer mx-auto">
     <h2 class="text-3xl font-bold mb-6 text-slate-800">Контакты</h2>
     <div class="p-7 grid grid-cols-1 bg-white rounded-2xl shadow-sm w-full md:w-1/2">

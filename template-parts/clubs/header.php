@@ -12,16 +12,16 @@ $route = [['Клубы', '/clubs'], ['Заголовок', '/заголовок'
     <div class="comtainer mx-auto">
       <ul class="flex gap-10 text-xs text-orange-500 font-bold">
         <li>
-          <a href="">Тарифы</a>
+          <a href="#tarrifs-section" class="hover:opacity-60">Тарифы</a>
         </li>
         <li>
-          <a href="">Тренеры</a>
+          <a href="#coaches-section" class="hover:opacity-60">Тренеры</a>
         </li>
         <li>
-          <a href="">Акции</a>
+          <a href="#promo-section" class="hover:opacity-60">Акции</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="#contacts-section" class="hover:opacity-60">Контакты</a>
         </li>
       </ul>
     </div>

@@ -6,6 +6,7 @@ get_header(null, ['is_active' => true]); ?>
   
   <?php get_template_part('template-parts/clubs/club-info'); ?>
   <?php get_template_part('template-parts/tarrifs'); ?>
+  <?php get_template_part('template-parts/clubs/promo-slider'); ?>
   <?php get_template_part('template-parts/clubs/contacts'); ?>
   <?php get_template_part('template-parts/clubs/coaches'); ?>
   <?php get_template_part('template-parts/faq'); ?>

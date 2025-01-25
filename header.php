@@ -27,7 +27,7 @@
         <i class="fa-solid fa-xmark"></i>
       </span>
       <div class="w-full">
-        <h3 class="text-2xl sm:text-3xl text-slate-800 font-bold mb-8 text-center">Получить больше информации</h3>
+        <h3 class="text-2xl sm:text-3xl text-slate-800 font-bold mb-8 text-center">Заказать обратный звонок</h3>
         <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-5 font-medium">
           <input type="text" class="w-full px-5 py-4 bg-gray-200 rounded-full border border-white hover:bg-gray-100 focus:border-gray-200" name="name" placeholder="Имя">
           <input type="text" class="w-full px-5 py-4 bg-gray-200 rounded-full border border-white hover:bg-gray-100 focus:border-gray-200" name="phone" placeholder="Телефон">
