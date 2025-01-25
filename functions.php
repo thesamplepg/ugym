@@ -72,4 +72,22 @@ function ugym_register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'ugym_register_scripts');
+
+function filter_blog_by_category($query)
+{
+    // Only modify the main query on the blog archive page
+    if (
+        $query->is_main_query() &&
+        !is_admin() &&
+        is_post_type_archive('blog')
+    ) {
+        // Check if a category has been selected in the URL
+        if (isset($_GET['cat']) && !empty($_GET['cat'])) {
+            $category_id = intval($_GET['cat']);
+            // Modify the query to filter the 'blog' posts by the selected category
+            $query->set('cat', $category_id);
+        }
+    }
+}
+add_action('pre_get_posts', 'filter_blog_by_category');
 ?>
