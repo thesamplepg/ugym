@@ -36,7 +36,6 @@ $route = [['Акции', '/promo']];
                 </span>
                 <div class="md:w-1/2 left flex flex-col gap-10 items-center">
                   <img class="w-full rounded-3xl" src="https://media.istockphoto.com/id/1833291471/photo/row-of-sports-equipment-in-fitness-gym-concept.jpg?s=612x612&w=0&k=20&c=96xpa8ztjeU-TIHoJJ4QAdp9j1JqolovE8zP8rNXePM=" alt="fitness hall">
-                  <a href="#" class="px-7 py-3 bg-orange-600 font-semibold rounded-full text-white">Выбрать клуб</a>
                 </div>
                 <div class="md:w-1/2">
                   <h3 class="text-2xl font-semibold mb-4">Тренажерный зал</h3>
@@ -92,7 +91,7 @@ $route = [['Акции', '/promo']];
         </li> 
       </ul>
     </div>
-    <?php get_template_part('template-parts/contacts'); ?>
+    <?php get_template_part('template-parts/promo/contacts'); ?>
   </main>
 
 <?php get_footer(); ?>

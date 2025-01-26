@@ -6,7 +6,7 @@ $route = [['Клубы', '/clubs'], ['Заголовок', '/заголовок'
 <section class="clubs-header bg-slate-100 z-30 fixed w-full pt-[76px]">
   <div class="comtainer mx-auto py-4">
     <?php echo load_template($route_template, false, $route); ?>
-    <h1 class="text-3xl md:text-4xl font-bold mt-4">Фитнес-клуб DDX Аквамолл</h1>
+    <h1 class="text-3xl md:text-4xl font-bold mt-4"><?php the_title(); ?></h1>
   </div>
   <nav class="bg-gray-200/70 py-4 transition-all">
     <div class="comtainer mx-auto">

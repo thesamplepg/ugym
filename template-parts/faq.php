@@ -3,39 +3,19 @@
     <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Часто задаваемы вопросы</h2>
     <div class="mt-10 flex flex-wrap justify-center lg:flex-nowrap gap-16 lg:gap-20">
       <ul class="faq-questions w-full lg:w-1/2 flex flex-col gap-5">
+        <?php foreach ($args as $faq): ?>
         <li class="text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
           <header class="relative z-20 flex items-center justify-between gap-4 bg-white py-4 px-6 text-slate-600 rounded-xl shadow-sm font-semibold">
-            Сколько раз в неделю можно ходить? 
+            <?php echo $faq['faq_question']; ?>
             <span class="text-3xl group-hover:rotate-45 transition-all">
               <i class="fa-solid fa-circle-plus text-teal-600"></i>
             </span>
           </header>
           <article class="hidden faq-answer relative z-10 py-4 px-6 text-sm bg-white">
-            В неделю можно ходить не ограниченное кол-во раз
+            <?php echo $faq['faq_answer']; ?>
           </article>
         </li>
-        <li class="text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
-          <header class="relative z-20 flex items-center justify-between gap-4 bg-white py-4 px-6 text-slate-600 rounded-xl shadow-sm font-semibold">
-            Сколько раз в неделю можно ходить? 
-            <span class="text-3xl group-hover:rotate-45 transition-all">
-              <i class="fa-solid fa-circle-plus text-teal-600"></i>
-            </span>
-          </header>
-          <article class="hidden faq-answer relative z-10 py-4 px-6 text-sm bg-white">
-            В неделю можно ходить не ограниченное кол-во раз
-          </article>
-        </li>
-        <li class="text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
-          <header class="relative z-20 flex items-center justify-between gap-4 bg-white py-4 px-6 text-slate-600 rounded-xl shadow-sm font-semibold">
-            Сколько раз в неделю можно ходить? 
-            <span class="text-3xl group-hover:rotate-45 transition-all">
-              <i class="fa-solid fa-circle-plus text-teal-600"></i>
-            </span>
-          </header>
-          <article class="hidden faq-answer relative z-10 py-4 px-6 text-sm bg-white">
-            В неделю можно ходить не ограниченное кол-во раз
-          </article>
-        </li>
+        <?php endforeach; ?>
       </ul>
       <div class="w-full lg:w-1/2">
         <h3 class="text-slate-800 text-xl md:text-2xl font-semibold">Остались еще вопросы ?</h3>

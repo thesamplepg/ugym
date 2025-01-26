@@ -10,9 +10,8 @@ if (have_posts()) {
 }
 function trim_to_words($text, $word_limit = 5)
 {
-    // Split the text into an array of words
-    $words = explode(' ', $text); // Slice the array to get the first $word_limit words
-    $trimmed_words = array_slice($words, 0, $word_limit); // Rejoin the words into a string
+    $words = explode(' ', $text);
+    $trimmed_words = array_slice($words, 0, $word_limit);
     return implode(' ', $trimmed_words);
 }
 ?>

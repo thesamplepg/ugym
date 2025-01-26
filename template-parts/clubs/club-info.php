@@ -1,47 +1,61 @@
+<?php
+$advantages = get_field('club_advantages');
+$images = get_field('club_images');
+?>
+
 <section class="py-16 pt-8 md:pt-16">
+  <?php echo $advantages['group_programs']; ?>
   <div class="comtainer mx-auto">
     <div class="flex flex-col md:flex-row gap-10 items-center">
       <section class="w-full md:w-2/5">
         <ul class="grid grid-cols-3 md:grid-cols-2 gap-10">
+          <?php if ($advantages['open_hours']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-clock"></i>
             Ежедневно с 6 до 24
           </li>
+          <?php endif; ?>
+          <?php if ($advantages['equipment']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-dumbbell"></i>
             Премиум оборудование
           </li>
+          <?php endif; ?>
+          <?php if ($advantages['spa']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-spa"></i>
             SPA-зона
           </li>
+          <?php endif; ?>
+          <?php if ($advantages['shower']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-shower"></i>
             Удобные раздевалки и душевые
           </li>
+          <?php endif; ?>
+          <?php if ($advantages['parking']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-car"></i>
             Парковка
           </li>
+          <?php endif; ?>
+          <?php if ($advantages['group_program']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-people-group"></i>
             Групповые программы
           </li>
+          <?php endif; ?>
         </ul>
       </section>
 
       <section class="w-full md:w-3/5">
         <div class="group swiper relative rounded-2xl overflow-hidden club-info-swiper">
           <div class="swiper-wrapper w-full">
-            <div class="swiper-slide">
-              <img class="w-full" src="https://www.ddxfitness.ru/upload/resize_cache/iblock/3cc/575_383_2/zca12mdkiceatbj3aji5erxjyuc05mw3.png" alt="fitness">
-            </div>
-            <div class="swiper-slide">
-              <img class="w-full" src="https://www.ddxfitness.ru/upload/resize_cache/iblock/6c8/575_383_2/te4hjv1svr10bkbza3si2v7lx52ok3t9.png" alt="fitness">
-            </div>
-            <div class="swiper-slide">
-              <img class="w-full" src="https://www.ddxfitness.ru/upload/resize_cache/iblock/5ef/575_383_2/x0iauv0cq8i63hxn5v5e0siz9deua8fr.png" alt="fitness">
-            </div>
+            <?php foreach ($images as $image_url): ?>
+              <div class="swiper-slide">
+                <img class="w-full" src="<?php echo $image_url; ?>" alt="fitness">
+              </div>
+            <?php endforeach; ?>
           </div>
           <div class="arrows absolute z-10 opacity-0 group-hover:opacity-100 transition-all top-0 left-0 w-full h-full text-orange-600 flex justify-between px-2 md:px-5 items-center">
             <span class="arrows-left transition-all w-10 h-10 cursor-pointer rounded-full flex items-center justify-center bg-white">
