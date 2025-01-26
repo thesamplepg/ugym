@@ -3,126 +3,30 @@
     <div id="clubs-map" class="w-full h-full"></div> 
   </section>
   <section class="w-full md:w-1/2 lg:w-1/3 p-5 h-[300px] md:h-full">
-    <ul class="h-full flex flex-col gap-3 overflow-y-scroll custom-scroll pr-1">
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div class="p-2 justify-between border-b">
-            <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
-              <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
-              UGG Боконбаве / Манаса
-            </h3>
-            <p class="my-2">Москва, ул. Летчика Бабушкина, 26, ТЦ «ОРИОН», этаж 1</p>
-            <a class="text-orange-600 semibold flex items-center gap-2" href="#">Перейти</a>
-          </div>
-        </a>
+    <ul class="clubs-map_locations h-full flex flex-col gap-3 overflow-y-scroll custom-scroll pr-1">
+      <?php
+      $query = new WP_Query(['post_type' => 'clubs']);
+      if ($query->have_posts()):
+          while ($query->have_posts()):
+              $query->the_post(); ?>
+              <li data-club-location="<?php echo get_field(
+                  'club_location',
+              ); ?>">
+                <a href="">
+                  <div class="p-2 justify-between border-b">
+                    <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
+                      <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
+                    <?php the_title(); ?> 
+                    </h3>
+                    <p class="my-2"><?php echo get_field('club_address'); ?></p>
+                    <a class="text-orange-600 semibold flex items-center gap-2" href="<?php echo get_the_permalink(); ?>">Перейти</a>
+                  </div>
+                </a>
+              </li>
+      <?php
+          endwhile;
+      endif;
+      ?>
       </li>
     </ul>
   </section>

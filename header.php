@@ -51,18 +51,20 @@
             <!--Nested menu-->
             <div class="absolute left-[-50%] hidden group-hover:block pt-2">
               <ul class="shadow custom-scroll w-[250px] max-h-[300px] bg-white rounded-lg text-orange-600 font-medium overflow-hidden overflow-y-scroll">
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
-                <li><a class="block p-2 px-3 hover:bg-slate-100" href="">UGym Боконбаева</a></li>
+                <?php
+                $query = new WP_Query(['post_type' => 'clubs']);
+                if ($query->have_posts()):
+                    while ($query->have_posts()):
+                        $query->the_post(); ?>
+                <li>
+                  <a class="block p-2 px-3 hover:bg-slate-100" href="<?php echo get_the_permalink(); ?>">
+                    <?php the_title(); ?>
+                  </a>
+                </li>
+                <?php
+                    endwhile;
+                endif;
+                ?>
               </ul>
             </div>
           </li>
@@ -80,25 +82,27 @@
 
     <!-- Mobile menu -->
 
-    <div id="mobile-menu" class="hidden fixed top-0 z-40 w-full min-h-dvh bg-orange-600">
+    <div id="mobile-menu" class="hidden pt-5 fixed top-0 z-40 w-full min-h-dvh bg-orange-600">
       <div class="comtainer mx-auto py-20 px-2 md:px-32 px-16 flex flex-col justify-between min-h-dvh">
         <nav class="list-none flex flex-col gap-6 justify-center font-medium text-lg text-white">
           <li class="parent-menu-item">
             <a class="block hover:opacity-80">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
             <!-- Accardion -->
             <ul class="hidden pt-2 text-white font-medium text-sm max-h-[192px] overflow-y-scroll">
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Чынгыза Айтматова</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
-              <li><a class="block p-1 px-3 text-slate-100" href="">UGym Боконбаева</a></li>
+              <?php
+              $query = new WP_Query(['post_type' => 'clubs']);
+              if ($query->have_posts()):
+                  while ($query->have_posts()):
+                      $query->the_post(); ?>
+                <li>
+                  <a class="block p-1 px-3 text-slate-100" href="<?php echo get_the_permalink(); ?>">
+                    <?php the_title(); ?>
+                  </a>
+                </li>
+              <?php
+                  endwhile;
+              endif;
+              ?>
             </ul>
             <!-- Accardion End -->
           </li>

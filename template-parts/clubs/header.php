@@ -1,6 +1,6 @@
 <?php
 $route_template = locate_template('template-parts/route.php');
-$route = [['Клубы', '/clubs'], ['Заголовок', '/заголовок']];
+$route = [['Клубы', '/clubs']];
 ?>
 
 <section class="clubs-header bg-slate-100 z-30 fixed w-full pt-[76px]">
