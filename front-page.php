@@ -11,7 +11,7 @@ get_header(); ?>
 <?php get_template_part('template-parts/faq'); ?>
 <?php get_template_part('template-parts/main-page/blog'); ?>
 <?php get_template_part('template-parts/main-page/map'); ?>
-<?php get_template_part('template-parts/partners-block'); ?>
+<?php get_template_part('template-parts/main-page/partners'); ?>
 <?php get_template_part('template-parts/contacts'); ?>
 
 </main>

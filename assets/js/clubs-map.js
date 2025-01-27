@@ -8,6 +8,11 @@ jQuery(document).ready(function ($) {
                 .map((coord) => parseFloat(coord)),
         );
 
+    const clubsSingleLocation = $('#clubs-single-map')
+        .attr('data-map-location')
+        .split(',')
+        .map((cord) => Number(cord));
+
     if (!ymaps.Map) {
         ymaps.modules.require(['Map', 'Placemark'], function (Map, Placemark) {
             ymaps.Map = Map;
@@ -24,6 +29,20 @@ jQuery(document).ready(function ($) {
                 );
                 map.geoObjects.add(placemark);
             });
+        });
+
+        ymaps.modules.require(['Map', 'Placemark'], function (Map, Placemark) {
+            const clubsSingleMap = new ymaps.Map('clubs-single-map', {
+                center: clubsSingleLocation,
+                zoom: 11,
+            });
+
+            const placemark = new Placemark(
+                clubsSingleLocation,
+                { iconContet: '' },
+                { preset: 'islands#darkOrangeDotIcon' },
+            );
+            clubsSingleMap.geoObjects.add(placemark);
         });
     }
 });

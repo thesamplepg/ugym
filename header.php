@@ -37,17 +37,20 @@
     </section>
   </div> 
 
-  <?php $isActive = $args ? $args['is_active'] : true; ?>
+  <?php
+  $isActive = $args ? $args['is_active'] : true;
+  $home_url = home_url();
+  ?>
 
   <header class="main-header w-full">
     <div data-preset-active="<?php echo $isActive; ?>" class="main-header_menu fixed top-0 z-50 w-full <?php echo $isActive
     ? 'main-header_menu--active'
     : ''; ?>">
       <div class="comtainer mx-auto py-4 flex items-center gap-5">
-        <div class="main-header_logo text-3xl text-white font-bold mr-8 grow"><a href="#">UGG</a></div>
+        <div class="main-header_logo text-3xl text-white font-bold mr-8 grow"><a href="<?php echo $home_url; ?>">UGG</a></div>
         <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-white font-semibold">
           <li class="relative group">
-            <a href="">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
+            <a href="<?php echo $home_url; ?>/clubs">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
             <!--Nested menu-->
             <div class="absolute left-[-50%] hidden group-hover:block pt-2">
               <ul class="shadow custom-scroll w-[250px] max-h-[300px] bg-white rounded-lg text-orange-600 font-medium overflow-hidden overflow-y-scroll">
@@ -57,7 +60,7 @@
                     while ($query->have_posts()):
                         $query->the_post(); ?>
                 <li>
-                  <a class="block p-2 px-3 hover:bg-slate-100" href="<?php echo get_the_permalink(); ?>">
+                  <a class="block p-2 px-3 hover:opacity-80" href="<?php echo get_the_permalink(); ?>">
                     <?php the_title(); ?>
                   </a>
                 </li>
@@ -68,9 +71,9 @@
               </ul>
             </div>
           </li>
-          <li><a href="">Тарифы</a></li>
-          <li><a href="">Промоакции</a></li>
-          <li><a href="">Акции</a></li>
+          <li><a href="<?php echo $home_url; ?>/tarrifs">Тарифы</a></li>
+          <li><a href="<?php echo $home_url; ?>/partners">Партнеры</a></li>
+          <li><a href="<?php echo $home_url; ?>/promo">Акции</a></li>
         </nav>
         <button data-modal-ref="#modal-buy" class="modal-handler main-header_buy-btn lg:block hidden bg-orange-600 text-white font-semibold px-5 py-3 rounded-full">Купить абонимент</button>
         <a href="" class="main-header_phone md:block hidden font-semibold text-white">+996 999-999-999</a>
@@ -106,9 +109,9 @@
             </ul>
             <!-- Accardion End -->
           </li>
-          <li><a class="block hover:opacity-80" href="">Тарифы</a></li>
-          <li><a class="block hover:opacity-80" href="">Промоакции</a></li>
-          <li><a class="block hover:opacity-80" href="">Акции</a></li>
+          <li><a class="block hover:opacity-80" href="<?php echo $home_url; ?>/tarrifs">Тарифы</a></li>
+          <li><a class="block hover:opacity-80" href="<?php echo $home_url; ?>/partners">Партнеры</a></li>
+          <li><a class="block hover:opacity-80" href="<?php echo $home_url; ?>/promo">Акции</a></li>
         </nav>
         <div class="flex flex-col gap-10 mt-16">
           <section class="flex flex-col gap-5">
