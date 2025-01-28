@@ -5,6 +5,9 @@ $category_template = locate_template('template-parts/blog/category.php');
 $route = [['Блог', '/blog']];
 $categories = ['новости', 'тренировки', 'события', 'питание'];
 $categories_params = ['categories' => $categories, 'activeIndex' => 0];
+if (have_posts()) {
+    the_post();
+}
 ?>
 
   <main class="py-[100px] pb-12 min-h-dvh">
@@ -20,7 +23,7 @@ $categories_params = ['categories' => $categories, 'activeIndex' => 0];
         <?php echo load_template($route_template, false, $route); ?>
       </header>
       <div class="block lg:grid grid-cols-[5fr_2fr] gap-5 my-10 relative">
-        <section class="bg-white rounded-2xl p-10">
+        <section class="bg-white rounded-2xl p-8 md:p-10">
           <h1 class="text-3xl md:text-4xl font-bold mb-10"><?php the_title(); ?></h1>
           <img class="rounded-2xl mb-10" src="<?php the_post_thumbnail_url(
               'large',

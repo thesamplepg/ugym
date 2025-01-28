@@ -2,7 +2,9 @@
   <div class="comtainer mx-auto py-20 px-2 md:px-32 px-16 flex flex-col justify-between min-h-dvh">
     <nav class="list-none flex flex-col gap-6 justify-center font-medium text-lg text-white">
       <li class="parent-menu-item">
-        <a href="<?php echo home_url(); ?>" class="block hover:opacity-80">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
+        <a href="<?php echo home_url(
+            '/clubs',
+        ); ?>" class="block hover:opacity-80">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
         <!-- Accardion -->
         <ul class="hidden pt-2 text-white font-medium text-sm max-h-[192px] overflow-y-scroll">
           <?php
@@ -25,6 +27,7 @@
       <li><a class="block hover:opacity-80" href="<?php echo home_url(); ?>/tarrifs">Тарифы</a></li>
       <li><a class="block hover:opacity-80" href="<?php echo home_url(); ?>/partners">Партнеры</a></li>
       <li><a class="block hover:opacity-80" href="<?php echo home_url(); ?>/promo">Акции</a></li>
+      <li><a class="block hover:opacity-80" href="<?php echo home_url(); ?>/blog">Блог</a></li>
     </nav>
     <div class="flex flex-col gap-10 mt-16">
       <section class="flex flex-col gap-5">
