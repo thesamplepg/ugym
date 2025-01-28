@@ -90,4 +90,43 @@ function filter_blog_by_category($query)
     }
 }
 add_action('pre_get_posts', 'filter_blog_by_category');
+
+function handle_contacts_form_submission()
+{
+    $name = sanitize_text_field($_POST['name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $tarrif = sanitize_text_field($_POST['tarrif']);
+    $promo = sanitize_text_field($_POST['promo']);
+
+    $post_id = wp_insert_post([
+        'post_type' => 'form_submission',
+        'post_title' => $name,
+        'post_status' => 'publish',
+    ]);
+
+    if ($post_id) {
+        update_post_meta($post_id, 'phone', $phone);
+        update_post_meta($post_id, 'tarrif', $tarrif);
+        update_post_meta($post_id, 'promo', $promo);
+    }
+
+    wp_redirect(home_url('?submission=success'));
+    exit();
+}
+
+add_action(
+    'admin_post_handle_contacts_form',
+    'handle_contacts_form_submission',
+);
+add_action(
+    'admin_post_nopriv_handle_contacts_form',
+    'handle_contacts_form_submission',
+);
+
+function get_main_page_id()
+{
+    $main_page = get_page_by_title('Главная');
+    return $main_page ? $main_page->ID : null;
+}
+
 ?>

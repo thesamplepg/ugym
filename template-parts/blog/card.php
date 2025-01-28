@@ -1,4 +1,4 @@
-<div class="w-full">
+<div class="w-full wow animate__animated animate__fadeInUp">
   <a href="<?php the_permalink(); ?>">
     <article class="rounded-2xl overflow-hidden bg-white shadow-sm">
       <div class="h-[210px] object-cover object-center p-3">

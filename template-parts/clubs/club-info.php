@@ -6,7 +6,7 @@ $images = get_field('club_images');
 <section class="py-16 pt-8 md:pt-16">
   <?php echo $advantages['group_programs']; ?>
   <div class="comtainer mx-auto">
-    <div class="flex flex-col md:flex-row gap-10 items-center">
+    <div class="flex flex-col md:flex-row gap-10 items-center wow animate__animated animate__fadeInUp">
       <section class="w-full md:w-2/5">
         <ul class="grid grid-cols-3 md:grid-cols-2 gap-10">
           <?php if ($advantages['open_hours']): ?>

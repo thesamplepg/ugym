@@ -2,7 +2,7 @@
 $promos = get_field('club_promos'); ?>
 <section class="promo-slider bg-slate-100 pb-16 pt-[90px]" id="promo-section">
   <div class="comtainer mx-auto">
-    <div class="promo-swiper swiper h-[350px] md:h-[400px] rounded-2xl shadow group">
+    <div class="promo-swiper swiper h-[350px] md:h-[400px] rounded-2xl shadow group wow animate__animated animate__fadeInUp">
       <div class="absolute z-10 w-full h-full p-6 md:p-10 flex items-end">
         <div class="w-full h-full lg:w-2/3 flex flex-col">
           <div class="promo-swiper_text grow relative text-3xl md:text-4xl">

@@ -4,7 +4,7 @@
       <div class="absolute w-full h-full bg-slate-900/60 top-0 left-0"></div>
       <div class="relative z-10">
         <article class="w-full md:w-2/3">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          <h2 class="wow animate__animated animate__fadeInLeft text-4xl md:text-5xl font-bold mb-6">
             UGG в цифрах
           </h2>
           <p class="font-medium">
@@ -12,19 +12,19 @@
           </p>
         </article>
         <ul class="mt-10 flex flex-wrap md:flex-nowrap justify-between gap-10">
-          <li class="font-semibold text-2xl">
+          <li class="wow animate__animated animate__fadeInUp font-semibold text-2xl">
             <span class="text-4xl font-bold text-orange-500">10</span> лет
             <p>на рынке</p>
           </li>
-          <li class="font-semibold text-2xl">
+          <li class="wow animate__animated animate__fadeInUp font-semibold text-2xl">
             <span class="text-4xl font-bold text-orange-500">13</span> залов 
             <p>по стране</p>
           </li>
-          <li class="font-semibold text-2xl">
+          <li class="wow animate__animated animate__fadeInUp font-semibold text-2xl">
             <span class="text-4xl font-bold text-orange-500">100+</span> 
             <p>тренеров</p> 
           </li>
-          <li class="font-semibold text-2xl">
+          <li class="wow animate__animated animate__fadeInUp font-semibold text-2xl">
             <span class="text-4xl font-bold text-orange-500">24/7</span>
             <p>открыты для вас</p> 
           </li>

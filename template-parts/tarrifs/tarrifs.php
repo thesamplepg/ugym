@@ -1,4 +1,4 @@
-<div class="tarrifs flex justify-center items-center lg:justify-between flex-wrap gap-10 md:gap-5">
+<div class="wow animate__animated animate__fadeInUp tarrifs flex justify-center items-center lg:justify-between flex-wrap gap-10 md:gap-5">
   <div class="tarrif-block_light w-full md:w-[320px] py-8 px-6 bg-white rounded-2xl shadow-sm">
     <h3 class="text-3xl text-teal-600 font-bold">Light</h3>
     <ul class="tarrif-block_list flex flex-col gap-2 my-6">
@@ -22,7 +22,7 @@
       </li>
     </ul>
     <h4 class="tarrif-block_price mb-3 text-teal-600 font-semibold"><span class="text-xl">15000 т</span> в месяц</h4>
-    <a href="#" data-modal-ref="#modal-buy" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-teal-600 text-white font-semibold rounded-full">
+    <a href="#" data-modal-ref="#modal-buy" data-input-key="tarrif" data-input-value="Light" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-teal-600 text-white font-semibold rounded-full">
       Купить
     </a>
   </div>
@@ -50,7 +50,7 @@
       </li>
     </ul>
     <h4 class="tarrif-block_price mb-3 text-slate-800 font-semibold"><span class="text-xl">15000 т</span> в месяц</h4>
-    <a href="#" data-modal-ref="#modal-buy" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-slate-800 text-white font-semibold rounded-full">
+    <a href="#" data-modal-ref="#modal-buy" data-input-key="tarrif" data-input-value="Platinum" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-slate-800 text-white font-semibold rounded-full">
       Купить
     </a>
   </div>
@@ -77,7 +77,7 @@
       </li>
     </ul>
     <h4 class="tarrif-block_price mb-3 text-orange-600 font-semibold"><span class="text-xl">15000 т</span> в месяц</h4>
-    <a href="#" data-modal-ref="#modal-buy" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-orange-600 text-white font-semibold rounded-full">
+    <a href="#" data-modal-ref="#modal-buy" data-input-key="tarrif" data-input-value="Gold" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-orange-600 text-white font-semibold rounded-full">
       Купить
     </a>
   </div>

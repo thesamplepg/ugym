@@ -4,7 +4,7 @@
     <div class="mt-10 flex flex-wrap justify-center lg:flex-nowrap gap-16 lg:gap-20">
       <ul class="faq-questions w-full lg:w-1/2 flex flex-col gap-5">
         <?php foreach ($args as $faq): ?>
-        <li class="text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
+        <li class="wow animate__animated animate__fadeInUp text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
           <header class="relative z-20 flex items-center justify-between gap-4 bg-white py-4 px-6 text-slate-600 rounded-xl shadow-sm font-semibold">
             <?php echo $faq['faq_question']; ?>
             <span class="text-3xl group-hover:rotate-45 transition-all">
@@ -17,7 +17,7 @@
         </li>
         <?php endforeach; ?>
       </ul>
-      <div class="w-full lg:w-1/2">
+      <div class="w-full lg:w-1/2 wow animate__animated animate__fadeInUp">
         <h3 class="text-slate-800 text-xl md:text-2xl font-semibold">Остались еще вопросы ?</h3>
         <p class="text-slate-700 mt-2 mb-8 max-w-96">Напишите нам ваши вопросы, мы потстараемся ответить в кратчайшие сроки.</p>
         <section class="flex gap-5">

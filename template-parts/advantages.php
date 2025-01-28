@@ -1,6 +1,6 @@
 <section class="advantages bg-slate-100 py-8">
   <div class="comtainer mx-auto">
-    <ul class="advantages_list relative z-10 mt-[-3rem] flex gap-10 md:gap-5 justify-center lg:justify-between flex-wrap">
+    <ul class="animate__animated animate__fadeInUp advantages_list relative z-10 mt-[-3rem] flex gap-10 md:gap-5 justify-center lg:justify-between flex-wrap">
       <li>
         <div class="advantages_item max-w-full md:max-w-[320px] bg-white shadow-sm rounded-2xl overflow-hidden">
           <header class="flex items-end bg-orange-600 min-h-[120px] p-5 rounded-2xl bg-right-bottom bg-no-repeat bg-[url('https://www.ddxfitness.ru/local/templates/iteraciya/img/gym-background.png')]">

@@ -27,8 +27,11 @@
         </ul>
       </nav>
       <div class="font-medium text-right">
-        <p>г. Алматы ул Боконбава 32</p>
-        <p class="text-base mb-2">+996 999 99 99</p>
+        <p><?php echo get_field('address', get_main_page_id()); ?></p>
+        <p class="text-base mb-2"><?php echo get_field(
+            'phone',
+            get_main_page_id(),
+        ); ?></p>
         <div>
           <a href="" class="text-white text-2xl">
             <i class="fa-brands fa-whatsapp"></i>

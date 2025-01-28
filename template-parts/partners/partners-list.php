@@ -7,7 +7,7 @@ $query = new WP_Query(['post_type' => 'partners']); ?>
       <?php if ($query->have_posts()):
           while ($query->have_posts()):
               $query->the_post(); ?>
-              <li data-modal-ref="#partners-modal-<?php echo get_the_ID(); ?>" class="modal-handler ">
+              <li data-modal-ref="#partners-modal-<?php echo get_the_ID(); ?>" class="modal-handler wow animate__animated aniamte__fadeInUp">
                 <a href="" class="py-4 px-6 border transition-all rounded-full block">
                   <img class="h-8" src="<?php the_post_thumbnail_url(
                       'medium',
