@@ -1,10 +1,4 @@
 <?php
-$main_page = get_page_by_title('Главная');
-$main_page_id;
-if ($main_page) {
-    $main_page_id = $main_page->ID;
-}
-
 $faq_template = locate_template('template-parts/faq.php');
 $faq_questions = get_field('faq', get_main_page_id());
 $visable = get_field('visable', get_main_page_id());
