@@ -43,8 +43,8 @@ $route = [['Акции', '/promo']];
                   <i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="md:w-1/2 left flex flex-col gap-10 items-center">
-                  <img class="w-full rounded-3xl" src="<?php the_post_thumbnail_url(
-                      'medium',
+                  <img class="w-full rounded-3xl" src="<?php echo get_field(
+                      'image',
                   ); ?>" alt="fitness hall">
                 </div>
                 <div class="md:w-1/2">
