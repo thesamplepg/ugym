@@ -1,14 +1,14 @@
 <div class="main-header_menu fixed top-0 z-50 w-full bg-white">
   <div class="comtainer mx-auto py-4 flex items-center gap-5">
-    <div class="main-header_logo text-3xl text-orange-600 font-bold mr-8 grow"><a href="<?php echo home_url(); ?>">UGG</a></div>
-    <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-orange-600 font-semibold">
+    <div class="main-header_logo text-3xl text-amber-500 font-bold mr-8 grow"><a href="<?php echo home_url(); ?>">UGG</a></div>
+    <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-amber-500 font-semibold">
       <li class="relative group">
         <a href="<?php echo home_url(
             '/clubs',
         ); ?>">Клубы <i class="fa-solid fa-caret-down ml-1"></i></a>
         <!--Nested menu-->
         <div class="absolute left-[-50%] hidden group-hover:block pt-2">
-          <ul class="shadow custom-scroll w-[250px] max-h-[300px] bg-white rounded-lg text-orange-600 font-medium overflow-hidden overflow-y-scroll">
+          <ul class="shadow custom-scroll w-[250px] max-h-[300px] bg-white rounded-lg text-amber-500 font-medium overflow-hidden overflow-y-scroll">
             <?php
             $query = new WP_Query(['post_type' => 'clubs']);
             if ($query->have_posts()):
@@ -31,12 +31,12 @@
       <li><a href="<?php echo home_url(); ?>/promo">Акции</a></li>
       <li><a href="<?php echo home_url(); ?>/blog">Блог</a></li>
     </nav>
-    <button data-modal-ref="#modal-buy" class="modal-handler main-header_buy-btn lg:block hidden bg-orange-600 text-white font-semibold px-5 py-3 rounded-full">Купить абонимент</button>
+    <button data-modal-ref="#modal-buy" class="modal-handler main-header_buy-btn lg:block hidden bg-amber-500 text-white font-semibold px-5 py-3 rounded-full">Купить абонимент</button>
     <a href="" class="main-header_phone md:block hidden font-semibold text-black"><?php echo get_field(
         'phone',
         get_main_page_id(),
     ); ?></a>
-    <span id="mobile-menu_btn" class="main-header_mobile-bar lg:hidden text-2xl text-orange-600">
+    <span id="mobile-menu_btn" class="main-header_mobile-bar lg:hidden text-2xl text-amber-500">
       <i class="fa-solid fa-bars"></i>
     </span>
   </div>

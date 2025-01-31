@@ -15,7 +15,7 @@
         <ul class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-5">
           <?php foreach ($in_digits['in_digits_list'] as $data): ?>
             <li class="wow animate__animated animate__fadeInUp font-semibold text-2xl">
-              <span class="text-4xl font-bold text-orange-500"><?php echo $data[
+              <span class="text-4xl font-bold text-amber-500"><?php echo $data[
                   'digit'
               ]; ?></span>
               <span><?php echo explode(' ', $data['text'], 2)[0]; ?></span>

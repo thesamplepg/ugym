@@ -21,7 +21,7 @@
       ?>
     </ul>
     <div class="mt-8 text-center">
-      <a href="/ugym/blog" class="py-3 px-8 font-semibold rounded-full shadow-sm bg-orange-600 inline-block text-white">Еще</a>
+      <a href="/ugym/blog" class="py-3 px-8 font-semibold rounded-full shadow-sm bg-amber-500 inline-block text-white">Еще</a>
     </div>
   </div>
 </section>

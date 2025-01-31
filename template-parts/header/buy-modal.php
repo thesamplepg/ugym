@@ -1,6 +1,6 @@
 <div id="modal-buy" class="hidden flex items-center justify-center fixed z-50 top-0 left-0 w-dvw h-dvh bg-black/70">
   <section class="modal_window relative flex flex-col md:flex-row gap-8 md:gap-12 max-w-[90%] lg:max-w-[800px] max-h-[65vh] md:max-h-[450px] overflow-hidden bg-white shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
-    <span class="modal_close-btn absolute top-2 right-5 text-orange-600 text-xl cursor-pointer">
+    <span class="modal_close-btn absolute top-2 right-5 text-amber-500 text-xl cursor-pointer">
       <i class="fa-solid fa-xmark"></i>
     </span>
     <div class="w-full">
@@ -13,7 +13,7 @@
         <input type="text" class="hidden" id="input-data-tarrif" name="tarrif" value="">
         <input type="text" class="hidden" id="input-data-club" name="club" value="">
         <input type="hidden" class="hidden" name="action" value="handle_contacts_form">
-        <input type="submit" class="cursor-pointer md:col-span-2 w-full rounded-full mt-2 font-semibold text-center px-5 py-4 bg-orange-600 text-white" value="Отправить">
+        <input type="submit" class="cursor-pointer md:col-span-2 w-full rounded-full mt-2 font-semibold text-center px-5 py-4 bg-amber-500 text-white" value="Отправить">
       </form>
     </div>
   </section>

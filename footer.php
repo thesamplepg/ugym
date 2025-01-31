@@ -1,4 +1,4 @@
-<footer class="bg-orange-600 py-14 text-white">
+<footer class="bg-amber-500 py-14 text-white">
   <div class="comtainer mx-auto">
     <h2 class="text-3xl font-bold">UGG</h2>
     <div class="flex gap-10 flex-wrap md:flex-nowrap">

@@ -57,7 +57,7 @@ $images = get_field('club_images');
               </div>
             <?php endforeach; ?>
           </div>
-          <div class="arrows absolute z-10 opacity-0 group-hover:opacity-100 transition-all top-0 left-0 w-full h-full text-orange-600 flex justify-between px-2 md:px-5 items-center">
+          <div class="arrows absolute z-10 opacity-0 group-hover:opacity-100 transition-all top-0 left-0 w-full h-full text-amber-500 flex justify-between px-2 md:px-5 items-center">
             <span class="arrows-left transition-all w-10 h-10 cursor-pointer rounded-full flex items-center justify-center bg-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -69,7 +69,7 @@ $images = get_field('club_images');
               </svg>
             </span> 
           </div>
-          <div class="swiper-pagination text-orange-600"></div>
+          <div class="swiper-pagination text-amber-500"></div>
         </div>
       </section>
     </div>

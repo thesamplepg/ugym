@@ -26,11 +26,11 @@ $route = [['Акции', '/promo']];
               </header>
               <article class="p-6 py-3">
                 <?php if (get_field('promo_seasonal')): ?>
-                  <span class="px-4 py-1 bg-orange-600 text-white font-semibold text-xs rounded-full mb-2 inline-block">Сезонная</span> 
+                  <span class="px-4 py-1 bg-amber-500 text-white font-semibold text-xs rounded-full mb-2 inline-block">Сезонная</span> 
                 <?php endif; ?>
                 <?php the_excerpt(); ?>
               </article>
-              <a href="" data-modal-ref="#promo-modal-<?php echo get_the_ID(); ?>" class="modal-handler flex items-center gap-3 p-6 pt-0 block text-orange-600 font-semibold">
+              <a href="" data-modal-ref="#promo-modal-<?php echo get_the_ID(); ?>" class="modal-handler flex items-center gap-3 p-6 pt-0 block text-amber-500 font-semibold">
                 Узнать больше 
                 <i class="fa-solid fa-chevron-right"></i>
               </a>
@@ -39,7 +39,7 @@ $route = [['Акции', '/promo']];
           <div id="promo-modal-<?php echo get_the_ID(); ?>" class="hidden flex items-center justify-center fixed top-0 left-0 w-dvw h-dvh bg-black/70">
             <section class="modal_window relative  md:flex-row  max-w-[90%] lg:max-w-[800px] overflow-hidden bg-white shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
               <div class="flex flex-col md:flex-row max-h-[65vh] md:max-h-[370px] gap-8 md:gap-12 overflow-y-scroll custom-scroll">
-                <span class="modal_close-btn absolute top-2 right-5 text-orange-600 text-xl cursor-pointer">
+                <span class="modal_close-btn absolute top-2 right-5 text-amber-500 text-xl cursor-pointer">
                   <i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="md:w-1/2 left flex flex-col gap-10 items-center">

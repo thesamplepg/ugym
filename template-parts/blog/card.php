@@ -12,14 +12,14 @@
           <?php
           $categories = get_the_category();
           foreach ($categories as $category): ?>
-            <li class="mr-2 mb-2"><a class="px-4 py-1 bg-orange-600 text-xs text-white font-semibold rounded-full"><?php echo $category->name; ?></a></li>
+            <li class="mr-2 mb-2"><a class="px-4 py-1 bg-amber-500 text-xs text-white font-semibold rounded-full"><?php echo $category->name; ?></a></li>
           <?php endforeach;
           ?>
         </ul>
         <div class="text-slate-600">
           <?php the_excerpt(); ?>
         </div>
-        <a href="<?php the_permalink(); ?>" class="mt-5 text-orange-600 font-semibold flex items-center gap-2">
+        <a href="<?php the_permalink(); ?>" class="mt-5 text-amber-500 font-semibold flex items-center gap-2">
           Читать
           <i class="fa-solid fa-chevron-right text-xs"></i>
         </a>

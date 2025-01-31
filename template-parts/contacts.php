@@ -9,7 +9,7 @@
           <input type="text" class="w-full px-5 py-4 bg-gray-200 rounded-full border border-white hover:bg-gray-100 focus:border-gray-200" name="name" placeholder="Имя">
           <input type="text" class="w-full px-5 py-4 bg-gray-200 rounded-full border border-white hover:bg-gray-100 focus:border-gray-200" name="phone" placeholder="Телефон">
           <input type="hidden" name="action" value="handle_contacts_form">
-          <input type="submit" class="md:col-span-2 w-full rounded-full mt-2 font-semibold text-center px-5 py-4 bg-orange-600 text-white" value="Отправить">
+          <input type="submit" class="md:col-span-2 w-full cursor-pointer rounded-full mt-2 font-semibold text-center px-5 py-4 bg-amber-500 text-white" value="Отправить">
         </form>
       </div>
     </div>

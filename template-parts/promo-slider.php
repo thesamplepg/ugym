@@ -13,14 +13,14 @@ $promo_slides = get_field('promo-slider', get_main_page_id()); ?>
             <?php endforeach; ?>
           </div>
           <section class="flex items-center mt-4 gap-4">
-            <a class="shadow text-white bg-orange-600 px-8 py-3 rounded-full font-bold" href="<?php echo home_url(); ?>/clubs">Выбрать клуб</a>
+            <a class="shadow text-white bg-amber-500 px-8 py-3 rounded-full font-bold" href="<?php echo home_url(); ?>/clubs">Выбрать клуб</a>
             <div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-all">
-              <span class="arrows-left opacity-60 hover:opacity-90 bg-orange-600 text-white rounded-full w-[44px] h-[44px] flex items-center justify-center cursor-pointer hover:scale-105 transition-all">
+              <span class="arrows-left opacity-60 hover:opacity-90 bg-amber-500 text-white rounded-full w-[44px] h-[44px] flex items-center justify-center cursor-pointer hover:scale-105 transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                 </svg>
               </span>
-              <span class="arrows-right opacity-60 hover:opacity-90 bg-orange-600 text-white rounded-full w-[44px] h-[44px] flex items-center justify-center cursor-pointer hover:scale-105 transition-all">
+              <span class="arrows-right opacity-60 hover:opacity-90 bg-amber-500 text-white rounded-full w-[44px] h-[44px] flex items-center justify-center cursor-pointer hover:scale-105 transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>

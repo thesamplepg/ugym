@@ -1,4 +1,4 @@
-<div id="mobile-menu" class="hidden pt-5 fixed top-0 z-40 w-full min-h-dvh bg-orange-600">
+<div id="mobile-menu" class="hidden pt-5 fixed top-0 z-40 w-full min-h-dvh bg-amber-500">
   <div class="comtainer mx-auto py-20 px-2 md:px-32 px-16 flex flex-col justify-between min-h-dvh">
     <nav class="list-none flex flex-col gap-6 justify-center font-medium text-lg text-white">
       <li class="parent-menu-item">
@@ -36,16 +36,16 @@
             get_main_page_id(),
         ); ?></a>
         <ul class="flex gap-4">
-          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-orange-600 hover:opacity-80" href=""><i class="fa-brands fa-telegram"></i></a></li>
-          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-orange-600 hover:opacity-80" href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-orange-600 hover:opacity-80" href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-amber-500 hover:opacity-80" href=""><i class="fa-brands fa-telegram"></i></a></li>
+          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-amber-500 hover:opacity-80" href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-2xl text-amber-500 hover:opacity-80" href=""><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
       </section> 
       <section class="flex flex-col gap-5">
-        <button  class="order-first md:order-last text-base text-orange-600 hover:text-white hover:bg-orange-600 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
+        <button  class="order-first md:order-last text-base text-amber-500 hover:text-white hover:bg-amber-500 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
           Выбрать клуб
         </button>
-        <button data-modal-ref="#modal-buy" class="modal-handler order-first md:order-last text-base text-orange-600 hover:text-white hover:bg-orange-600 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
+        <button data-modal-ref="#modal-buy" class="modal-handler order-first md:order-last text-base text-amber-500 hover:text-white hover:bg-amber-500 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
           Купить абонимент 
         </button>
       </section>

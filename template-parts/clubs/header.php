@@ -10,7 +10,7 @@ $route = [['Клубы', '/clubs']];
   </div>
   <nav class="bg-gray-200/70 py-4 transition-all">
     <div class="comtainer mx-auto">
-      <ul class="flex gap-10 text-xs text-orange-500 font-bold">
+      <ul class="flex gap-10 text-xs text-amber-500 font-bold">
         <li>
           <a href="#tarrifs-section" class="hover:opacity-60">Тарифы</a>
         </li>

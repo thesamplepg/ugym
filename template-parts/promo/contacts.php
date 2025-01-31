@@ -20,7 +20,7 @@
               <option value="<?php echo $promo; ?>"><?php echo $promo; ?></option>
             <?php endforeach; ?>
           </select>
-          <input type="submit" class="md:col-span-2 w-full rounded-full mt-2 font-semibold text-center px-5 py-4 bg-orange-600 text-white" value="Отправить">
+          <input type="submit" class="md:col-span-2 w-full rounded-full mt-2 font-semibold text-center px-5 py-4 bg-amber-500 text-white" value="Отправить">
         </form>
       </div>
     </div>

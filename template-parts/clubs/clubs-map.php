@@ -14,12 +14,12 @@
               ); ?>">
                 <a href="<?php echo get_the_permalink(); ?>">
                   <div class="p-2 justify-between border-b">
-                    <h3 class="flex items-center gap-2 font-semibold text-lg text-orange-600">
+                    <h3 class="flex items-center gap-2 font-semibold text-lg text-amber-500">
                       <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
                     <?php the_title(); ?> 
                     </h3>
                     <p class="my-2"><?php echo get_field('club_address'); ?></p>
-                    <a class="text-orange-600 semibold flex items-center gap-2" href="<?php echo get_the_permalink(); ?>">Перейти</a>
+                    <a class="text-amber-500 semibold flex items-center gap-2" href="<?php echo get_the_permalink(); ?>">Перейти</a>
                   </div>
                 </a>
               </li>
