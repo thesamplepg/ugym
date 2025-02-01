@@ -65,3 +65,4 @@ $color_palate = [
       endwhile;
   endif; ?>
 </div>
+<?php wp_reset_postdata(); ?>

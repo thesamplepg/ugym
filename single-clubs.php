@@ -1,11 +1,12 @@
 <?php
-get_header(null, ['is_active' => true]); ?>
+get_header(); ?>
 <?php
 if (have_posts()) {
     the_post();
 }
 $faq_template = locate_template('template-parts/faq.php');
 $faq = get_field('club_faq');
+$promos = get_field('club_promos');
 ?>
 
 

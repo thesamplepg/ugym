@@ -4,7 +4,6 @@ $images = get_field('club_images');
 ?>
 
 <section class="py-16 pt-8 md:pt-16">
-  <?php echo $advantages['group_programs']; ?>
   <div class="comtainer mx-auto">
     <div class="flex flex-col md:flex-row gap-10 items-center wow animate__animated animate__fadeInUp">
       <section class="w-full md:w-2/5">
@@ -39,7 +38,7 @@ $images = get_field('club_images');
             Парковка
           </li>
           <?php endif; ?>
-          <?php if ($advantages['group_program']): ?>
+          <?php if ($advantages['group_programs']): ?>
           <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
             <i class="text-teal-600 text-4xl fa-solid fa-people-group"></i>
             Групповые программы

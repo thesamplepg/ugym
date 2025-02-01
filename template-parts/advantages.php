@@ -62,3 +62,4 @@ $color_palate = [
     </ul>
   </div>
 </section>
+<?php wp_reset_postdata(); ?>
