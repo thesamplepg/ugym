@@ -15,6 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=2898e19c-d19b-41a7-b928-11785a847300&lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
+  <script src="https://mapgl.2gis.com/api/js/v1"></script>
   <?php wp_head(); ?>
 </head>
 <body class="text-sm text-slate-800 overflow-x-hidden bg-slate-100">
