@@ -30,6 +30,12 @@ body {
   background-color: rgb(234, 88, 12);
 }
 
+.responsive-iframe iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+}
+
 @media screen and (max-width: 1024px) {
   .comtainer {
     width: 90%;

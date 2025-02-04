@@ -17,7 +17,7 @@ $map = str_replace('height="600px"', 'height="100%"', get_field('club_map'));
         <p class="py-5 border-b"><?php echo $work_hours; ?></p>
         <a data-modal-ref="#modal-buy" class="modal-handler mt-10 px-6 py-3 bg-amber-500 text-center rounded-full font-semibold text-white border-b" href="">Присоедениться</a>
       </div>
-      <div class="overflow-hidden rounded-2xl shadow w-full h-full flex items-center justify-center">
+      <div class="responsive-iframe overflow-hidden rounded-2xl shadow w-full h-full flex items-center justify-center">
         <?php echo $map; ?>
       </div>
     </div>

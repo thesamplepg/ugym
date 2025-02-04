@@ -23,6 +23,13 @@ body {
 .swiper-pagination-bullet-active {
     background-color: rgba(234, 88, 12, 1);
 }
+.responsive-iframe {
+    iframe {
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+    }
+}
 @media screen and (max-width: 1024px) {
     .comtainer {
         width: 90%;
