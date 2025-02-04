@@ -2,6 +2,7 @@
 $phone = get_field('club_phone');
 $work_hours = get_field('club_work_hours');
 $address = get_field('club_address');
+$map = str_replace('height="600px"', 'height="100%"', get_field('club_map'));
 ?>
 <section class="py-8" id="contacts-section">
   <div class="comtainer mx-auto">
@@ -16,10 +17,8 @@ $address = get_field('club_address');
         <p class="py-5 border-b"><?php echo $work_hours; ?></p>
         <a data-modal-ref="#modal-buy" class="modal-handler mt-10 px-6 py-3 bg-amber-500 text-center rounded-full font-semibold text-white border-b" href="">Присоедениться</a>
       </div>
-      <div class="min-h-[300px] md:min-h-auto">
-        <div data-map-location="<?php echo get_field(
-            'club_location',
-        ); ?>" id="clubs-single-map" class="overflow-hidden rounded-2xl shadow w-full h-full"></div>
+      <div class="overflow-hidden rounded-2xl shadow w-full h-full flex items-center justify-center">
+        <?php echo $map; ?>
       </div>
     </div>
   </div>

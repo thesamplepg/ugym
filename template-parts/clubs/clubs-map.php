@@ -1,6 +1,12 @@
+<?php $clubs_map = str_replace(
+    'height="600px"',
+    'height="100%"',
+    get_field('clubs_map', get_main_page_id()),
+); ?>
 <div class="mt-8 md:h-[500px] rounded-2xl shadow bg-white overflow-hidden flex flex-wrap md:flex-nowrap wow animate__animated animate__fadeInUp">
   <section class="w-full md:w-1/2 lg:w-2/3 h-[300px] md:h-full">
-    <div id="clubs-map" class="w-full h-full"></div> 
+    <!-- <div id="clubs-map" class="w-full h-full"></div>  -->
+    <?php echo $clubs_map; ?>
   </section>
   <section class="w-full md:w-1/2 lg:w-1/3 p-5 h-[300px] md:h-full">
     <ul class="clubs-map_locations h-full flex flex-col gap-3 overflow-y-scroll custom-scroll pr-1">
