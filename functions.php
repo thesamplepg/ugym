@@ -25,14 +25,22 @@ function ugym_register_styles()
     wp_enqueue_style(
         'ugym-main',
         get_template_directory_uri() . '/assets/css/main.css',
+        [],
+        filemtime(get_template_directory() . '/assets/css/main.css'), // Version update
     );
     wp_enqueue_style(
         'ugym-main-header',
         get_template_directory_uri() . '/assets/css/main-header.css',
+        [],
+        filemtime(get_template_directory() . '/assets/css/main-header.css'),
     );
     wp_enqueue_style(
         'ugym-wordpress-content',
         get_template_directory_uri() . '/assets/css/wordpress-content.css',
+        [],
+        filemtime(
+            get_template_directory() . '/assets/css/wordpress-content.css',
+        ),
     );
 }
 
@@ -41,33 +49,55 @@ add_action('wp_enqueue_scripts', 'ugym_register_styles');
 function ugym_register_scripts()
 {
     wp_enqueue_script('jquery');
+
     wp_enqueue_script(
         'ugym_main',
         get_template_directory_uri() . '/assets/js/main.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/main.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_header',
         get_template_directory_uri() . '/assets/js/header.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/header.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_welcome-slider',
         get_template_directory_uri() . '/assets/js/welcome-slider.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/welcome-slider.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_faq',
         get_template_directory_uri() . '/assets/js/faq.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/faq.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_clubs-map',
         get_template_directory_uri() . '/assets/js/clubs-map.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/clubs-map.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_clubs-header',
         get_template_directory_uri() . '/assets/js/clubs-header.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/clubs-header.js'),
+        true,
     );
     wp_enqueue_script(
         'ugym_swiper-components',
         get_template_directory_uri() . '/assets/js/swiper-components.js',
+        [],
+        filemtime(get_template_directory() . '/assets/js/swiper-components.js'),
+        true,
     );
 }
 
