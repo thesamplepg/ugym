@@ -24,7 +24,7 @@ if (have_posts()) {
       </header>
       <div class="block lg:grid grid-cols-[5fr_2fr] gap-5 my-10 relative">
         <section class="bg-white rounded-2xl p-8 md:p-10">
-          <h1 class="text-3xl md:text-4xl font-bold mb-10"><?php the_title(); ?></h1>
+          <h1 class="text-3xl text-neutral-800 md:text-4xl font-bold mb-10"><?php the_title(); ?></h1>
           <img class="rounded-2xl mb-10" src="<?php the_post_thumbnail_url(
               'large',
           ); ?>" alt="fitness">

@@ -19,7 +19,7 @@ $query = new WP_Query(['post_type' => 'partners']); ?>
                 <div id="partners-modal-<?php echo get_the_ID(); ?>" class="hidden flex items-center justify-center fixed z-40 top-0 left-0 w-dvw h-dvh bg-black/70">
                   <section class="modal_window relative  md:flex-row  max-w-[90%] lg:max-w-[800px] overflow-hidden bg-white shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
                     <div class="flex flex-col md:flex-row max-h-[65vh] md:max-h-[370px] gap-8 md:gap-12 overflow-y-scroll custom-scroll">
-                      <span class="modal_close-btn absolute top-2 right-5 text-amber-500 text-xl cursor-pointer">
+                      <span class="modal_close-btn absolute top-2 right-5 text-orange-6000 text-xl cursor-pointer">
                         <i class="fa-solid fa-xmark"></i>
                       </span>
                       <div class="md:w-1/2 left flex flex-col gap-10 items-center">

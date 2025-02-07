@@ -16,14 +16,14 @@ function trim_to_words($text, $word_limit = 5)
 }
 ?>
 
-<div class="blog-sidebar p-5 py-3 pb-5 bg-white rounded-2xl sticky top-[100px]">
+<div class="blog-sidebar p-5 py-3 pb-5 bg-neutral-800 rounded-2xl sticky top-[100px]">
   <h3 class="mb-4 font-bold text-base">Актуально</h3>
   <ul class="flex flex-col gap-5">
     <?php if ($query->have_posts()):
         while ($query->have_posts()):
             $query->the_post(); ?>
       <li>
-        <a class="flex gap-3 items-center" href="<?php echo get_the_permalink(); ?>">
+        <a class="flex gap-3 items-center text-amber-500" href="<?php echo get_the_permalink(); ?>">
           <img class="w-16 h-16 rounded-lg object-cover object-center" src="<?php the_post_thumbnail_url(
               'small',
           ); ?>" alt="post_image">

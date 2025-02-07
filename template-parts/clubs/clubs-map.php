@@ -3,7 +3,7 @@
     'height="100%"',
     get_field('clubs_map', get_main_page_id()),
 ); ?>
-<div class="mt-8 md:h-[500px] rounded-2xl shadow bg-neutral-900 overflow-hidden flex flex-wrap md:flex-nowrap wow animate__animated animate__fadeInUp">
+<div class="mt-8 md:h-[500px] rounded-2xl shadow bg-neutral-800 overflow-hidden flex flex-wrap md:flex-nowrap wow animate__animated animate__fadeInUp">
   <section class="responsive-iframe w-full md:w-1/2 lg:w-2/3 h-[300px] md:h-full">
     <!-- <div id="clubs-map" class="w-full h-full"></div>  -->
     <?php echo $clubs_map; ?>
