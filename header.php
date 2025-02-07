@@ -18,7 +18,7 @@
   <script src="https://mapgl.2gis.com/api/js/v1"></script>
   <?php wp_head(); ?>
 </head>
-<body class="text-sm text-slate-800 overflow-x-hidden bg-slate-100">
+<body class="text-sm overflow-x-hidden bg-neutral-900 text-white">
   
   <?php $phone = get_field('phone', get_main_page_id()); ?>
 

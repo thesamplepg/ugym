@@ -2,7 +2,7 @@
 $coaches = get_field('club_coaches'); ?>
 <section class="py-16 pt-8" id="coaches-section">
   <div class="comtainer mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-slate-800">Тренеры</h2>
+    <h2 class="text-3xl font-bold mb-6">Тренеры</h2>
     <div class="coaches-swiper swiper">
       <div class="swiper-wrapper">
         <?php foreach ($coaches as $coach):

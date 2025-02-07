@@ -23,7 +23,6 @@ $visable = get_field('visable', get_main_page_id());
     get_template_part('template-parts/main-page/map'); ?>
 <?php $visable['partners'] &&
     get_template_part('template-parts/main-page/partners'); ?>
-<?php get_template_part('template-parts/contacts'); ?>
 
 </main>
 

@@ -6,7 +6,7 @@ $query = new WP_Query([
 $color_palate = [
     'orange' => 'amber-500',
     'teal' => 'teal-600',
-    'slate' => 'slate-800',
+    'slate' => 'white',
 ];
 ?>
 
@@ -19,7 +19,7 @@ $color_palate = [
           $shadow = get_field('tarrifs_best') ? 'shadow-lg' : 'shadow-sm';
           ?>
 
-          <div class="tarrif-block w-full md:w-[320px] py-8 px-6 bg-white rounded-2xl <?php echo $shadow; ?>">
+          <div class="tarrif-block w-full md:w-[320px] py-8 px-6 bg-neutral-800 rounded-2xl <?php echo $shadow; ?>">
             <?php if (get_field('tarrifs_best')): ?>
               <p class="text-slate-600 text-xs uppercase mb-2 font-medium">лучший выбор</p>
             <?php endif; ?>
@@ -57,7 +57,10 @@ $color_palate = [
                   'tarrifs_price',
               ); ?></span> в месяц
             </h4>
-            <a href="#" data-modal-ref="#modal-buy" data-input-key="tarrif" data-input-value="<?php the_title(); ?>" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-<?php echo $color; ?> text-white font-semibold rounded-full">
+            <a href="#" data-modal-ref="#modal-buy" data-input-key="tarrif" data-input-value="<?php the_title(); ?>" class="modal-handler tarrif-block_btn px-8 py-3 block text-center bg-<?php echo $color ==
+'white'
+    ? 'neutral-900'
+    : $color; ?> text-white font-semibold rounded-full">
               Купить
             </a>
           </div>

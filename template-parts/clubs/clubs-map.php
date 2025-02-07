@@ -3,7 +3,7 @@
     'height="100%"',
     get_field('clubs_map', get_main_page_id()),
 ); ?>
-<div class="mt-8 md:h-[500px] rounded-2xl shadow bg-white overflow-hidden flex flex-wrap md:flex-nowrap wow animate__animated animate__fadeInUp">
+<div class="mt-8 md:h-[500px] rounded-2xl shadow bg-neutral-900 overflow-hidden flex flex-wrap md:flex-nowrap wow animate__animated animate__fadeInUp">
   <section class="responsive-iframe w-full md:w-1/2 lg:w-2/3 h-[300px] md:h-full">
     <!-- <div id="clubs-map" class="w-full h-full"></div>  -->
     <?php echo $clubs_map; ?>
@@ -19,7 +19,7 @@
                   'club_location',
               ); ?>">
                 <a href="<?php echo get_the_permalink(); ?>">
-                  <div class="p-2 justify-between border-b">
+                  <div class="p-2 justify-between border-b border-neutral-600">
                     <h3 class="flex items-center gap-2 font-semibold text-lg text-amber-500">
                       <i class="fa-solid fa-location-dot opacity-90 text-sm"></i>
                     <?php the_title(); ?> 

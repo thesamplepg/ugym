@@ -1,6 +1,6 @@
 <div class="w-full wow animate__animated animate__fadeInUp">
   <a href="<?php the_permalink(); ?>">
-    <article class="rounded-2xl overflow-hidden bg-white shadow-sm">
+    <article class="rounded-2xl overflow-hidden bg-neutral-800 shadow-sm">
       <div class="h-[210px] object-cover object-center p-3">
         <img class="w-full h-full rounded-2xl object-cover object-center" src="<?php the_post_thumbnail_url(
             'medium',
@@ -16,7 +16,7 @@
           <?php endforeach;
           ?>
         </ul>
-        <div class="text-slate-600">
+        <div class="text-white">
           <?php the_excerpt(); ?>
         </div>
         <a href="<?php the_permalink(); ?>" class="mt-5 text-amber-500 font-semibold flex items-center gap-2">

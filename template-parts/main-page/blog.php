@@ -1,6 +1,6 @@
-<section class="py-16 pt-10 md:pt-16 bg-slate-100">
+<section class="py-16 pt-10 md:pt-16">
   <div class="comtainer mx-auto">
-    <h2 class="text-4xl font-bold text-slate-800">Последние публикации</h2>
+    <h2 class="text-4xl font-bold text-white">Последние публикации</h2>
     <ul class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       <?php
       $args = [

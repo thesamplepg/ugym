@@ -1,4 +1,4 @@
-<section class="py-16 bg-slate-100">
+<section class="py-16">
   <div class="comtainer mx-auto">
     <div class="py-20 px-10 bg-white rounded-2xl flex justify-center shadow-sm wow animate__animated animate__fadeInUp">
       <div class="w-full lg:w-1/2">

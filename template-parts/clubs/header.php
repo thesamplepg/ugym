@@ -3,7 +3,7 @@ $route_template = locate_template('template-parts/route.php');
 $route = [['Клубы', '/clubs']];
 ?>
 
-<section class="clubs-header bg-slate-100 z-30 fixed w-full pt-[76px]">
+<section class="clubs-header bg-white z-30 fixed w-full pt-[76px]">
   <div class="comtainer mx-auto py-4">
     <?php echo load_template($route_template, false, $route); ?>
     <h1 class="text-3xl md:text-4xl font-bold mt-4"><?php the_title(); ?></h1>

@@ -7,14 +7,14 @@ $color_palate = [
 ];
 ?>
 
-<section class="advantages bg-slate-100 py-8">
+<section class="advantages py-8">
   <div class="comtainer mx-auto">
     <ul class="advantages_list z-10 mt-[-3rem] flex gap-10 md:gap-5 justify-center lg:justify-between flex-wrap">
       <?php if ($query->have_posts()):
           while ($query->have_posts()):
               $query->the_post(); ?>
         <li>
-          <div class="advantages_item max-w-full md:max-w-[320px] bg-white shadow-sm rounded-2xl overflow-hidden">
+          <div class="advantages_item max-w-full md:max-w-[320px] bg-neutral-800 shadow-sm rounded-2xl overflow-hidden">
             <header class="flex items-end bg-<?php echo $color_palate[
                 get_field('color')
             ]; ?> min-h-[120px] p-5 rounded-2xl bg-right-bottom bg-no-repeat bg-[url('<?php the_post_thumbnail_url(

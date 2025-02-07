@@ -1,6 +1,6 @@
 <?php
 $promo_slides = get_field('club_promos'); ?>
-<section class="promo-slider bg-slate-100 pb-16 pt-[90px]">
+<section class="promo-slider pb-16 pt-[90px]">
   <div class="comtainer mx-auto">
     <div class="promo-swiper swiper h-[350px] md:h-[400px] rounded-2xl shadow group">
       <div class="absolute z-10 w-full h-full p-6 md:p-10 flex items-end">

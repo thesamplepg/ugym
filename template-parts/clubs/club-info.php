@@ -9,38 +9,38 @@ $images = get_field('club_images');
       <section class="w-full md:w-2/5">
         <ul class="grid grid-cols-3 md:grid-cols-2 gap-10">
           <?php if ($advantages['open_hours']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-clock"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-clock"></i>
             Ежедневно с 6 до 24
           </li>
           <?php endif; ?>
           <?php if ($advantages['equipment']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-dumbbell"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-dumbbell"></i>
             Премиум оборудование
           </li>
           <?php endif; ?>
           <?php if ($advantages['spa']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-spa"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-spa"></i>
             SPA-зона
           </li>
           <?php endif; ?>
           <?php if ($advantages['shower']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-shower"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-shower"></i>
             Удобные раздевалки и душевые
           </li>
           <?php endif; ?>
           <?php if ($advantages['parking']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-car"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-car"></i>
             Парковка
           </li>
           <?php endif; ?>
           <?php if ($advantages['group_programs']): ?>
-          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-slate-500">
-            <i class="text-teal-600 text-4xl fa-solid fa-people-group"></i>
+          <li class="flex flex-col gap-3 items-center text-center md:items-start md:text-start text-xs text-white">
+            <i class="text-amber-500 text-4xl fa-solid fa-people-group"></i>
             Групповые программы
           </li>
           <?php endif; ?>

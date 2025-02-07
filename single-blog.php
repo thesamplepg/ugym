@@ -37,7 +37,6 @@ if (have_posts()) {
         </section>
       </div>
     </div>
-    <?php get_template_part('template-parts/contacts'); ?>
   </main>
 
 <?php get_footer(); ?>

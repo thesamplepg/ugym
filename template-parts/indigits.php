@@ -1,8 +1,8 @@
 <?php $in_digits = get_field('in_digits', get_main_page_id()); ?>
-<section class="py-16 bg-slate-100">
+<section class="py-16">
   <div class="comtainer mx-auto">
-    <div class="relative p-10 md:p-16 text-white rounded-3xl bg-slate-800 shadow overflow-hidden">
-      <div class="absolute w-full h-full bg-slate-900/60 top-0 left-0"></div>
+    <div class="relative p-10 md:p-16 text-white rounded-3xl bg-neutral-800 shadow overflow-hidden">
+      <div class="absolute w-full h-full top-0 left-0"></div>
       <div class="relative z-10">
         <article class="w-full md:w-2/3">
           <h2 class="wow animate__animated animate__fadeInLeft text-4xl md:text-5xl font-bold mb-6">

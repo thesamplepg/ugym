@@ -7,7 +7,7 @@ $categories = ['новости', 'тренировки', 'события', 'пи
 $categories_params = ['categories' => $categories, 'activeIndex' => 0];
 ?>
 
-  <main class="py-[100px] pb-12 min-h-dvh">
+  <main class="py-[100px] pb-12">
     <div class="comtainer mx-auto">
 
       <header>
@@ -19,7 +19,7 @@ $categories_params = ['categories' => $categories, 'activeIndex' => 0];
           ); ?>
         </div> 
         <?php echo load_template($route_template, false, $route); ?>
-        <h1 class="text-3xl md:text-4xl font-bold mt-2">Блог</h1>
+        <h1 class="text-3xl md:text-4xl font-bold mt-2 text-white">Блог</h1>
       </header>
 
       <section class="py-10">
@@ -35,7 +35,6 @@ $categories_params = ['categories' => $categories, 'activeIndex' => 0];
       </section>
 
     </div>
-    <?php get_template_part('template-parts/contacts'); ?>
   </main>
 
 <?php get_footer(); ?>
