@@ -6,13 +6,13 @@ jQuery(document).ready(function ($) {
     const activate = () => {
         title.slideUp();
         header.addClass('drop-shadow-sm');
-        nav.addClass('bg-slate-100');
+        nav.addClass('bg-neutral-800');
     };
 
     const off = () => {
         title.slideDown();
         header.removeClass('drop-shadow-sm');
-        nav.removeClass('bg-slate-100');
+        nav.removeClass('bg-neutral-800');
     };
 
     $(document).on('scroll', function () {
