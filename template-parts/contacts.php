@@ -1,8 +1,8 @@
 <section class="py-16">
   <div class="comtainer mx-auto">
-    <div class="py-20 px-10 bg-white rounded-2xl flex justify-center shadow-sm wow animate__animated animate__fadeInUp">
+    <div class="py-20 px-10 bg-neutral-800 rounded-2xl flex justify-center shadow-sm wow animate__animated animate__fadeInUp">
       <div class="w-full lg:w-1/2">
-        <h3 class="text-2xl sm:text-3xl text-slate-800 font-bold mb-8 text-center">Получить больше информации</h3>
+        <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-center">Получить больше информации</h3>
         <form method="post" action="<?php echo esc_url(
             admin_url('admin-post.php'),
         ); ?>" class="grid grid-cols-1 md:grid-cols-2 gap-5 font-medium">

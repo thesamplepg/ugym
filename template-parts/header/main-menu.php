@@ -1,4 +1,4 @@
-<div class="main-header_menu fixed top-0 z-50 w-full bg-neutral-900">
+<div class="main-header_menu fixed top-0 z-50 w-full bg-neutral-800">
   <div class="comtainer mx-auto py-4 flex items-center gap-5">
     <div class="main-header_logo text-3xl text-amber-500 font-bold mr-8 grow"><a href="<?php echo home_url(); ?>">UGG</a></div>
     <nav class="main-header_nav lg:flex hidden list-none grow gap-8 justify-center text-amber-500 font-semibold">

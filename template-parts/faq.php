@@ -4,14 +4,14 @@
     <div class="mt-10 flex flex-wrap justify-center lg:flex-nowrap gap-16 lg:gap-20">
       <ul class="faq-questions w-full lg:w-1/2 flex flex-col gap-5">
         <?php foreach ($args as $faq): ?>
-        <li class="wow animate__animated animate__fadeInUp text-base bg-white group cursor-pointer rounded-xl shadow-sm overflow-hidden">
-          <header class="relative z-20 flex items-center justify-between gap-4 bg-white py-4 px-6 text-slate-600 rounded-xl shadow-sm font-semibold">
+        <li class="wow animate__animated animate__fadeInUp text-base bg-neutral-800 group cursor-pointer rounded-xl shadow-sm overflow-hidden">
+          <header class="relative z-20 flex items-center justify-between gap-4 bg-neutral-800 py-4 px-6 text-white rounded-xl shadow-sm font-semibold">
             <?php echo $faq['faq_question']; ?>
             <span class="text-3xl group-hover:rotate-45 transition-all">
               <i class="fa-solid fa-circle-plus text-teal-600"></i>
             </span>
           </header>
-          <article class="hidden faq-answer relative z-10 py-4 px-6 text-sm bg-white">
+          <article class="hidden faq-answer relative z-10 py-4 px-6 text-sm bg-neutral-800">
             <?php echo $faq['faq_answer']; ?>
           </article>
         </li>

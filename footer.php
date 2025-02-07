@@ -1,8 +1,8 @@
 <?php get_template_part('template-parts/contacts'); ?>
 
-<footer class="bg-amber-500 py-14 text-white">
+<footer class="bg-amber-500 py-14 text-white bg-neutral-800">
   <div class="comtainer mx-auto">
-    <h2 class="text-3xl font-bold">UGG</h2>
+    <h2 class="text-3xl font-bold text-amber-500">UGG</h2>
     <div class="flex gap-10 flex-wrap md:flex-nowrap">
       <article class="max-w-[300px]">
         <p class="font-medium mt-4 opacity-90">
