@@ -12,7 +12,7 @@
           <?php
           $categories = get_the_category();
           foreach ($categories as $category): ?>
-            <li class="mr-2 mb-2"><a class="px-4 py-1 bg-amber-500 text-xs text-white font-semibold rounded-full"><?php echo $category->name; ?></a></li>
+            <li class="mr-2 mb-2"><a class="px-4 py-1 bg-amber-500 text-xs text-neutral-800 font-semibold rounded-full"><?php echo $category->name; ?></a></li>
           <?php endforeach;
           ?>
         </ul>

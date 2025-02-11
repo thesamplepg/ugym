@@ -127,6 +127,7 @@ function handle_contacts_form_submission()
     $phone = sanitize_text_field($_POST['phone']);
     $tarrif = sanitize_text_field($_POST['tarrif']);
     $promo = sanitize_text_field($_POST['promo']);
+    $partner = sanitize_text_field($_POST['partner']);
 
     $post_id = wp_insert_post([
         'post_type' => 'form_submission',
@@ -138,6 +139,7 @@ function handle_contacts_form_submission()
         update_post_meta($post_id, 'phone', $phone);
         update_post_meta($post_id, 'tarrif', $tarrif);
         update_post_meta($post_id, 'promo', $promo);
+        update_post_meta($post_id, 'partner', $partner);
     }
 
     wp_redirect(home_url('?submission=success'));

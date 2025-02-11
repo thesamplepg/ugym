@@ -1,5 +1,6 @@
 html {
   margin: 0 !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,8 +17,8 @@ body {
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  border: 3px solid white;
-  background-color: rgb(234, 88, 12);
+  border: 3px solid rgb(38, 38, 38);
+  background-color: #f59e0b;
   background-clip: padding-box;
   border-radius: 10px;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(234, 88, 12);
+  background-color: #f59e0b;
 }
 
 .responsive-iframe iframe {

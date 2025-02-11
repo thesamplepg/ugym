@@ -3,8 +3,8 @@ $categories = get_categories();
 array_unshift($categories, (object) ['term_id' => 0, 'name' => 'Все']);
 $active_category_id = get_queried_object()->term_id;
 
-$active_styles = 'text-white bg-amber-500';
-$default_styles = 'text-amber-500 bg-white';
+$active_styles = 'text-neutral-800 bg-amber-500';
+$default_styles = 'text-amber-500 bg-neutral-800';
 ?>
 
 <ul class="post_categories flex flex-wrap max-w-1/2 gap-y-6 gap-4">

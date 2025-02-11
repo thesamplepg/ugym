@@ -42,12 +42,14 @@
         </ul>
       </section> 
       <section class="flex flex-col gap-5">
-        <button  class="order-first md:order-last text-base text-amber-500 hover:text-white hover:bg-amber-500 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
+        <a href="<?php echo home_url(
+            '/clubs',
+        ); ?>" class="order-first md:order-last text-base text-amber-500 text-center transition duration-300 font-semibold bg-neutral-800 rounded-full px-20 py-3">
           Выбрать клуб
-        </button>
-        <button data-modal-ref="#modal-buy" class="modal-handler order-first md:order-last text-base text-amber-500 hover:text-white hover:bg-amber-500 transition duration-300 font-semibold bg-white rounded-full px-20 py-3">
+        </a>
+        <a href="#" data-modal-ref="#modal-buy" class="modal-handler order-first md:order-last text-base text-amber-500 text-center transition duration-300 font-semibold bg-neutral-800 rounded-full px-20 py-3">
           Купить абонимент 
-        </button>
+        </a>
       </section>
     </div>
   </div>

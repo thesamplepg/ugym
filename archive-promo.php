@@ -26,30 +26,33 @@ $route = [['Акции', '/promo']];
               </header>
               <article class="p-6 py-3">
                 <?php if (get_field('promo_seasonal')): ?>
-                  <span class="px-4 py-1 bg-amber-500 text-white font-semibold text-xs rounded-full mb-2 inline-block">Сезонная</span> 
+                  <span class="px-4 py-1 bg-amber-500 text-neutral-800 font-semibold text-xs rounded-full mb-2 inline-block">Сезонная</span> 
                 <?php endif; ?>
-                <?php the_excerpt(); ?>
+                <p>
+                  <?php echo get_field('about'); ?>
+                </p>
               </article>
-              <a href="" data-modal-ref="#promo-modal-<?php echo get_the_ID(); ?>" class="modal-handler flex items-center gap-3 p-6 pt-0 block text-amber-500 font-semibold">
+              <a href="" data-modal-ref="#promo-modal-<?php echo get_the_ID(); ?>" class="modal-handler flex items-center gap-3 p-6 pt-0 mt-2 block text-amber-500 font-semibold">
                 Узнать больше 
                 <i class="fa-solid fa-chevron-right"></i>
               </a>
             </div>
           </a>
-          <div id="promo-modal-<?php echo get_the_ID(); ?>" class="hidden flex items-center justify-center fixed top-0 left-0 w-dvw h-dvh bg-black/70">
-            <section class="modal_window relative  md:flex-row  max-w-[90%] lg:max-w-[800px] overflow-hidden bg-white shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
+          <div id="promo-modal-<?php echo get_the_ID(); ?>" class="hidden flex items-center justify-center fixed z-40 top-0 left-0 w-dvw h-dvh bg-black/70">
+            <section class="modal_window relative  md:flex-row  max-w-[90%] lg:max-w-[800px] overflow-hidden bg-neutral-800 shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
               <div class="flex flex-col md:flex-row max-h-[65vh] md:max-h-[370px] gap-8 md:gap-12 overflow-y-scroll custom-scroll">
-                <span class="modal_close-btn absolute top-2 right-5 text-amber-500 text-xl cursor-pointer">
+                <span class="modal_close-btn absolute top-2 right-5 text-orange-6000 text-xl cursor-pointer">
                   <i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="md:w-1/2 left flex flex-col gap-10 items-center">
                   <img class="w-full rounded-3xl" src="<?php echo get_field(
                       'image',
                   ); ?>" alt="fitness hall">
+                  <a href="#" data-modal-ref="#modal-buy" data-input-key="partner" data-input-value="<?php the_title(); ?>" class="modal-handler px-7 py-3 bg-amber-500 font-semibold rounded-full text-white">Выбрать</a>
                 </div>
                 <div class="md:w-1/2">
-                  <h3 class="text-2xl font-semibold mb-4"><?php the_title(); ?></h3>
-                  <div class="wordpress-content">
+                  <h3 class="text-2xl text-amber-500 font-semibold mb-4"><?php the_title(); ?></h3>
+                  <div class="wordpress-content text-white/90">
                     <?php the_content(); ?>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 html {
     margin: 0 !important;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', serif;
@@ -12,8 +13,8 @@ body {
     border-radius: 20px;
 }
 .custom-scroll::-webkit-scrollbar-thumb {
-    border: 3px solid white;
-    background-color: rgba(234, 88, 12, 1);
+    border: 3px solid rgba(38, 38, 38, 1);
+    background-color: #f59e0b;
     background-clip: padding-box;
     border-radius: 10px;
 }
@@ -21,7 +22,7 @@ body {
     display: none;
 }
 .swiper-pagination-bullet-active {
-    background-color: rgba(234, 88, 12, 1);
+    background-color: #f59e0b;
 }
 .responsive-iframe {
     iframe {
