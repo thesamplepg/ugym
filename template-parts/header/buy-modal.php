@@ -1,5 +1,5 @@
 <div id="modal-buy" class="hidden flex items-center justify-center fixed z-50 top-0 left-0 w-dvw h-dvh bg-black/70">
-  <section class="modal_window relative flex flex-col md:flex-row gap-8 md:gap-12 w-[90%] lg:w-[800px] max-h-[65vh] md:max-h-[450px] overflow-hidden bg-neutral-800 shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
+  <section class="modal_window relative flex flex-col md:flex-row gap-8 md:gap-12 lg:max-w-[800px] max-h-[65vh] md:max-h-[450px] overflow-hidden bg-neutral-800 shadow p-10 rounded-2xl animate__animated animate__fadeInDown animate__faster">
     <span class="modal_close-btn absolute top-2 right-5 text-amber-500 text-xl cursor-pointer">
       <i class="fa-solid fa-xmark"></i>
     </span>
