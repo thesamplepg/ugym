@@ -4,7 +4,7 @@
       <i class="fa-solid fa-xmark"></i>
     </span>
     <div class="w-full">
-      <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-center">Оставить заявку</h3>
+      <h3 class="form-title text-2xl sm:text-3xl font-bold mb-8 text-center">Оставить заявку</h3>
       <form method="post" action="<?php echo esc_url(
           admin_url('admin-post.php'),
       ); ?>" class="grid grid-cols-1 md:grid-cols-2 gap-5 text-neutral-800 font-medium">

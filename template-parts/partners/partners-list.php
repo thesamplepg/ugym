@@ -6,7 +6,11 @@ $query = new WP_Query(['post_type' => 'partners']); ?>
     <ul class="grid xs:grid-cols-2 lg:grid-cols-3 items-stretch gap-6 md:gap-4">
       <?php if ($query->have_posts()):
           while ($query->have_posts()):
-              $query->the_post(); ?>
+
+              $query->the_post();
+              $discount_partner = get_field('discount_partners');
+              $discount_all = get_field('discount_all');
+              ?>
               <li class="modal-handler">
                 <div class="w-full h-full text-center flex flex-col items-center rounded-2xl bg-neutral-800 p-2 md:p-4 py-6 md:py-10">
                   <img class="h-[70px] md:h-[110px] rounded-2xl mb-4 object-center object-fit" src="<?php the_post_thumbnail_url(
@@ -31,7 +35,27 @@ $query = new WP_Query(['post_type' => 'partners']); ?>
                         <img class="w-full rounded-3xl" src="<?php the_post_thumbnail_url(
                             'large',
                         ); ?>" alt="fitness hall">
-                        <a href="#" data-modal-ref="#modal-buy" data-input-key="partner" data-input-value="<?php the_title(); ?>" class="modal-handler px-7 py-3 bg-amber-500 font-semibold rounded-full text-white">Выбрать</a>
+                        <div class="flex gap-4">
+                          <div class="text-center">
+                            <p class="font-medium">Скидка для клиента</p>
+                            <?php  ?>
+                            <p class="mb-6 font-bold text-4xl text-amber-500"><?php echo !empty(
+                                $discount_partner
+                            )
+                                ? $discount_partner
+                                : $discount_all; ?></p>
+                            <a href="#" data-modal-ref="#modal-buy" data-modal-title="Получить скидку" data-input-key="partner" data-input-value="<?php echo get_the_title() .
+                                ': Скидка для клиента - ' .
+                                $discount_partner; ?>" class="modal-handler px-7 py-3 bg-amber-500 font-semibold rounded-full text-white">Получить</a>
+                          </div>
+                          <div class="text-center">
+                            <p class="font-medium">Скидка для всех</p>
+                            <p class="mb-6 font-bold text-4xl text-amber-500"><?php echo $discount_all; ?></p>
+                            <a href="#" data-modal-ref="#modal-buy" data-modal-title="Получить скидку" data-input-key="partner" data-input-value="<?php echo get_the_title() .
+                                ': Скидка для всех - ' .
+                                $discount_all; ?>" class="modal-handler px-7 py-3 bg-amber-500 font-semibold rounded-full text-white">Получить</a>
+                          </div>
+                        </div>
                       </div>
                       <div class="md:w-1/2">
                         <h3 class="text-2xl text-amber-500 font-semibold mb-4"><?php the_title(); ?></h3>

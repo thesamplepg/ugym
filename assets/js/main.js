@@ -2,8 +2,10 @@ jQuery(document).ready(function ($) {
     new WOW().init();
     const modalHandlers = $('.modal-handler');
 
-    const openModal = (ref) => {
+    const openModal = (ref, title = 'Оставить заявку') => {
         const modal = $(ref);
+        modal.find('.form-title').text(title);
+
         modal.removeClass('hidden');
         modal.on('click', () => modal.addClass('hidden'));
         modal.find('.modal_window').on('click', (e) => e.stopPropagation());
@@ -12,21 +14,22 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    const openModalWithInputData = (ref, { key, value }) => {
+    const openModalWithInputData = (ref, { key, value, title }) => {
         $(`#input-data-${key}`).val(value);
 
-        openModal(ref);
+        openModal(ref, title);
     };
 
     modalHandlers.each(function () {
         const ref = $(this).attr('data-modal-ref');
         const key = $(this).attr('data-input-key');
         const value = $(this).attr('data-input-value');
+        const title = $(this).attr('data-modal-title');
 
         $(this).on('click', function (e) {
             e.preventDefault();
             if (key && value) {
-                return openModalWithInputData(ref, { key, value });
+                return openModalWithInputData(ref, { key, value, title });
             }
             openModal(ref);
         });
