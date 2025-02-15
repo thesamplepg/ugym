@@ -35,7 +35,7 @@ $query = new WP_Query(['post_type' => 'partners']); ?>
                         <img class="w-full rounded-3xl" src="<?php the_post_thumbnail_url(
                             'large',
                         ); ?>" alt="fitness hall">
-                        <div class="flex gap-4">
+                        <div class="flex flex-col md:flex-row gap-8">
                           <div class="text-center">
                             <p class="font-medium">Скидка для клиента</p>
                             <?php  ?>
