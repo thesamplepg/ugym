@@ -29,6 +29,12 @@ function ugym_register_styles()
         filemtime(get_template_directory() . '/assets/css/main.css'), // Version update
     );
     wp_enqueue_style(
+        'ugym-wordpress-content',
+        get_template_directory_uri() . '/assets/css/fonts.css',
+        [],
+        filemtime(get_template_directory() . '/assets/css/fonts.css'),
+    );
+    wp_enqueue_style(
         'ugym-main-header',
         get_template_directory_uri() . '/assets/css/main-header.css',
         [],

@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UGym</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="description" content="Крупнейшая в Астане сеть фитнес-центров Underground GYM. 12 филиалов, финские сауны, занятия по йоге и стретчингу.">
+  <meta name="keywords" content="фитнес, тренировки, астана, тренер, спорт">
+  <meta name="author" content="Underground Gym">
+  <meta property="og:title" content="Underground GYM — Фитнес-клубы в Астане">
+  <meta property="og:description" content="Тренировки, сауны, йога и стретчинг. 12 филиалов в Астане. Запишитесь на бесплатное занятие!">
+  <meta property="og:image" content="https://ugym.biz.kg/wp-content/uploads/2025/01/promo-image.jpg">
+  <meta property="og:url" content="https://ugym.kz">
+  <meta property="og:type" content="website">
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=2898e19c-d19b-41a7-b928-11785a847300&lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
-  <script src="https://mapgl.2gis.com/api/js/v1"></script>
   <?php wp_head(); ?>
 </head>
 <body class="text-sm overflow-x-hidden bg-neutral-900 text-white">

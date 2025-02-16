@@ -1,5 +1,7 @@
 <?php
 $promo_slides = get_field('promo-slider', get_main_page_id()); ?>
+<link rel="preload" as="image" href="<?php echo $promo_slides[0]['image']; ?>">
+
 <section class="promo-slider pb-16 pt-[90px]">
   <div class="comtainer mx-auto">
     <div class="promo-swiper swiper h-[350px] md:h-[400px] rounded-2xl shadow group">
@@ -31,9 +33,10 @@ $promo_slides = get_field('promo-slider', get_main_page_id()); ?>
       </div>
       <div class="swiper-wrapper h-full">
         <?php foreach ($promo_slides as $slide): ?>
-          <div class="swiper-slide w-full h-full bg-center bg-cover bg-[url('<?php echo $slide[
-              'image'
-          ]; ?>')]">
+          <div class="swiper-slide w-full h-full">
+            <img decoding="async" class="h-full object-cover object-center" src="<?php echo $slide[
+                'image'
+            ]; ?>" alt="promo-image">
           </div>
         <?php endforeach; ?>
       </div>

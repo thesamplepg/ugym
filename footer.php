@@ -12,19 +12,29 @@
       <nav class="grow">
         <ul class="flex flex-col gap-2 underline">
           <li>
-            <a href="" class="hover:opacity-80">Блог</a>
+            <a href="<?php echo home_url(
+                '/blog',
+            ); ?>" class="hover:opacity-80">Блог</a>
           </li>
           <li>
-            <a href="" class="hover:opacity-80">Тарифы</a>
+            <a href="<?php echo home_url(
+                '/tarrifs',
+            ); ?>" class="hover:opacity-80">Тарифы</a>
           </li>
           <li>
-            <a href="" class="hover:opacity-80">Клубы</a>
+            <a href="<?php echo home_url(
+                '/clubs',
+            ); ?>" class="hover:opacity-80">Клубы</a>
           </li>
           <li>
-            <a href="" class="hover:opacity-80">Акции</a>
+            <a href="<?php echo home_url(
+                '/promo',
+            ); ?>" class="hover:opacity-80">Акции</a>
           </li>
           <li>
-            <a href="" class="hover:opacity-80">FAQ</a>
+            <a href="<?php echo home_url(
+                '/partners',
+            ); ?>" class="hover:opacity-80">Партнеры</a>
           </li>
         </ul>
       </nav>
@@ -34,12 +44,12 @@
             'phone',
             get_main_page_id(),
         ); ?></p>
-        <div>
-          <a href="" class="text-white text-2xl">
+        <div class="flex gap-4 justify-end">
+          <a href="https://api.whatsapp.com/send/?phone=77018428701" class="text-white text-2xl">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
-          <a href="" class="text-white text-2xl">
-            <i class="fa-brands fa-telegram"></i>
+          <a href="https://www.instagram.com/underground_gym_ast/" class="text-white text-2xl">
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -47,6 +57,11 @@
     <p class="mt-6">&copy; UndergroundGym 2025 </p>
   </div>
 </footer>
+
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</script>
+<script defer src="https://mapgl.2gis.com/api/js/v1"></script>
 
 <?php wp_footer(); ?>
 
